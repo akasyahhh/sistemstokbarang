@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Simple POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+<p id="currentDate" class="date-info"></p>
+
+        <nav class="menu">
+            <a href="purchase.html">Pencatatan Pembelian</a>
+            <a href="payment.html">Pembayaran</a>
+            <a href="stock.html">Stok</a>
+            <a href="report.html">Laporan Penjualan</a>
+        </nav>
+
+        <div class="dashboard-action">
+            <button id="exportReport">Ekspor Laporan ke Excel</button>
+            <button id="clearPurchase">Kosongkan Data Pembelian</button>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

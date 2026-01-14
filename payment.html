@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pembayaran - Simple POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pembayaran</h2>
+        <a href="dashboard.html" class="back-btn">Back to Dashboard</a>  <!-- Tambahkan ini -->
+        <form id="paymentForm">
+            <input type="number" id="totalAmount" placeholder="Total Pembayaran" required>
+            <select id="paymentMethod">
+                <option value="cash">Tunai</option>
+                <option value="card">Kartu</option>
+            </select>
+            <button type="submit">Bayar</button>
+        </form>
+        <div id="paymentStatus"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

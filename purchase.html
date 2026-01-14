@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pencatatan Pembelian - Simple POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pencatatan Transaksi Pembelian</h2>
+        <a href="dashboard.html" class="back-btn">Back to Dashboard</a>  <!-- Tambahkan ini -->
+        <form id="purchaseForm">
+            <input type="text" id="itemName" placeholder="Nama Barang" required>
+            <input type="number" id="quantity" placeholder="Jumlah" required>
+            <input type="number" id="price" placeholder="Harga per Unit" required>
+            <button type="submit">Catat Pembelian</button>
+        </form>
+        <div id="purchaseList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Stok - Simple POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Kelola Stok</h2>
+        <a href="dashboard.html" class="back-btn">Back to Dashboard</a>  <!-- Tambahkan ini -->
+        <form id="stockForm">
+            <input type="text" id="stockItem" placeholder="Nama Barang" required>
+            <input type="number" id="stockQuantity" placeholder="Jumlah Stok" required>
+            <button type="submit">Update Stok</button>
+        </form>
+        <div id="stockList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* ================= FONT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 700px;
+    width: 90%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+/* ================= FORM ================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input, select {
+    border: 2px solid #ddd;
+}
+
+input:focus, select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+    outline: none;
+}
+
+/* ================= NAV ================= */
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: rgba(102,126,234,0.1);
+}
+
+/* ================= LIST DATA ================= */
+#purchaseList,
+#stockList,
+#reportList {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+#purchaseList p,
+#stockList p,
+#reportList p {
+    background: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ================= DASHBOARD BUTTON ================= */
+.dashboard-action {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.dashboard-action button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* EKSPOR (BIRU) */
+#exportReport {
+    background: linear-gradient(45deg, #3182ce, #4299e1);
+}
+
+#exportReport:hover {
+    background: linear-gradient(45deg, #2b6cb0, #3182ce);
+    box-shadow: 0 6px 15px rgba(49,130,206,0.4);
+}
+
+/* HAPUS DATA (MERAH TUA) */
+#clearPurchase {
+    background: linear-gradient(45deg, #b91c1c, #dc2626);
+}
+
+#clearPurchase:hover {
+    background: linear-gradient(45deg, #991b1b, #b91c1c);
+}
+
+/* LOGOUT (MERAH) */
+#logout {
+    background: linear-gradient(45deg, #e53e3e, #dc3545);
+}
+
+#logout:hover {
+    background: linear-gradient(45deg, #c53030, #e53e3e);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+.date-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
